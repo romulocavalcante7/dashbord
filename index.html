@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Dashboard</h1>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2>Total de Vendas</h2>
+        <p class="number">$20,000</p>
+        <p class="percentage">+20% <span>em relação ao mês passado</span></p>
+      </div>
+
+      <div class="card">
+        <h2>Visitantes</h2>
+        <p class="number">15,000</p>
+        <p class="percentage">+10% <span>em relação ao mês passado</span></p>
+      </div>
+
+      <div class="card">
+        <h2>Tempo Médio de Permanência</h2>
+        <p class="number">2:30 min</p>
+        <p class="percentage">-5% <span>em relação ao mês passado</span></p>
+      </div>
+
+      <div class="card">
+        <h2>Taxa de Rejeição</h2>
+        <p class="number">45%</p>
+        <p class="percentage">-2% <span>em relação ao mês passado</span></p>
+      </div>
+
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="changeVendas()">Atualizar Total de Vendas</button>
+      <button onclick="changeVisitantes()">Atualizar Visitantes</button>
+      <button onclick="changeTempo()">Atualizar Tempo Médio de Permanência</button>
+      <button onclick="changeRejeicao()">Atualizar Taxa de Rejeição</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
